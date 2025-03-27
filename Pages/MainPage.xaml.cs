@@ -19,6 +19,12 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+
+            bool result = Preferences.Get("ManterLogado", false); 
+
+            Preferences.Set("ManterLogado", true);
+
+            result = Preferences.Get("ManterLogado", false);
         }
     }
 

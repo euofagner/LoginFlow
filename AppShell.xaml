@@ -16,16 +16,25 @@
     <ShellContent
         Title="Login"
         ContentTemplate="{DataTemplate pages:LoginPage}"
-        Route="LoginPage" />
+        Route="LoginPage"
+        Shell.FlyoutBehavior="Disabled" 
+        Shell.FlyoutItemIsVisible="False" />
 
-    <ShellContent
-        Title="Listing"
-        ContentTemplate="{DataTemplate page:ListingPage}"
-        Route="ListingPage" />
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate pages:MainPage}"
-        Route="MainPage" />
+        <ShellContent
+            Title="Listing"
+            ContentTemplate="{DataTemplate pages:ListingPage}"
+            Route="ListingPage" />
+
+        <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate pages:ProfilePage}"
+            Route="ProfilePage" />
+    </TabBar>
 
 </Shell>

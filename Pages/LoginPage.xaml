@@ -4,9 +4,13 @@
              x:Class="LoginFlow.Pages.LoginPage"
              Title="LoginPage">
     <VerticalStackLayout>
-        <Label 
-            Text="Login Page"
+        <Button 
+            Text="Login"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" 
+            Clicked="Button_Clicked"/>
+
+        <CheckBox
+            CheckedChanged="CheckBox_CheckedChanged"/>
     </VerticalStackLayout>
 </ContentPage> 

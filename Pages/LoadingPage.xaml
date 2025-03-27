@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoginFlow.Pages.LoadingPage"
-             Title="LoadingPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Loading Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+<ContentPage
+    x:Class="LoginFlow.Pages.LoadingPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LoadingPage"
+    Shell.NavBarIsVisible="False">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <ActivityIndicator IsRunning="True" Color="Green" />
+
+        <Label Text="Checking authentication state..." />
     </VerticalStackLayout>
 </ContentPage>
