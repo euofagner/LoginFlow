@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using LoginFlow.Pages;
+using LoginFlow.Services;
+using Microsoft.Extensions.Logging;
 
 namespace LoginFlow;
 
@@ -19,6 +21,9 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		return builder.Build();
+		builder.Services.AddTransient<AuthService>();
+        builder.Services.AddTransient<LoadingPage>();
+
+        return builder.Build();
 	}
 }
