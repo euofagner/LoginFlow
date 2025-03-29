@@ -6,10 +6,10 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
 
-        bool result = Preferences.Get("ContinuarLogado", false);
+        //bool result = Preferences.Get("ContinuarLogado", false);
 
-        if (result) Shell.Current.GoToAsync($"//{nameof(MainPage)}");
-            
+        //if (result) 
+        //    Shell.Current.GoToAsync($"//{nameof(MainPage)}");
 	}
 
     private async void Button_Clicked(object sender, EventArgs e)
@@ -19,7 +19,7 @@ public partial class LoginPage : ContentPage
 
     private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
-        if (sender is CheckBox checkBox)
-            Preferences.Set("ContinuarLogado", checkBox.IsChecked);
+        //if (sender is CheckBox checkBox)
+        //    Preferences.Set("ContinuarLogado", checkBox.IsChecked);
     }
 }

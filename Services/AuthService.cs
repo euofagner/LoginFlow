@@ -11,6 +11,6 @@ public class AuthService
     public async Task<bool> IsAuthenticadeAsync()
     {
         await Task.Delay(2000);
-        return false;
+        return true;
     }
 }
