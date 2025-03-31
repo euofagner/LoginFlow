@@ -10,7 +10,7 @@
             HorizontalOptions="Center" 
             Clicked="Button_Clicked"/>
 
-        <CheckBox
-            CheckedChanged="CheckBox_CheckedChanged"/>
+        <!--<CheckBox
+            CheckedChanged="CheckBox_CheckedChanged"/>-->
     </VerticalStackLayout>
 </ContentPage> 

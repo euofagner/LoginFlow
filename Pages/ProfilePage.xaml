@@ -4,10 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="ProfilePage">
-    <VerticalStackLayout>
+
+    <VerticalStackLayout
+        Padding="25"
+        HorizontalOptions="Center"
+        Spacing="25"
+        VerticalOptions="Center">
+        
         <Label
             HorizontalOptions="Center"
             Text="Profile Page"
             VerticalOptions="Center" />
+
+        <Button Clicked="Button_Clicked" Text="Logout" />
     </VerticalStackLayout>
+
 </ContentPage>
