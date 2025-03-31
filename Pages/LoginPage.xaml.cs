@@ -20,13 +20,15 @@ public partial class LoginPage : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        _authService.Login();
 		await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
     }
 
-    //private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
-    //{
-    //    //if (sender is CheckBox checkBox)
-    //    //    Preferences.Set("ContinuarLogado", checkBox.IsChecked);
-    //}
+    private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+        if (sender is CheckBox checkBox)
+        {
+            if (checkBox.IsChecked)
+                _authService.Login();
+        }
+    }
 }

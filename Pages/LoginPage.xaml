@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoginFlow.Pages.LoginPage"
-             Title="LoginPage">
+<ContentPage
+    x:Class="LoginFlow.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LoginPage">
     <VerticalStackLayout>
-        <Button 
+        <Button
+            Clicked="Button_Clicked"
+            HorizontalOptions="Center"
             Text="Login"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            Clicked="Button_Clicked"/>
+            VerticalOptions="Center" />
 
-        <!--<CheckBox
-            CheckedChanged="CheckBox_CheckedChanged"/>-->
+        <CheckBox CheckedChanged="CheckBox_CheckedChanged" />
     </VerticalStackLayout>
 </ContentPage> 

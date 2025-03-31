@@ -12,9 +12,9 @@ public partial class LoadingPage : ContentPage
 		_authService = authService;
 	}
 
-    protected async override void OnNavigatedTo(NavigatedToEventArgs args)
-    {
-        base.OnNavigatedTo(args);
+	protected async override void OnNavigatedTo(NavigatedToEventArgs args)
+	{
+		base.OnNavigatedTo(args);
 
 		if (await _authService.IsAuthenticadeAsync())
 		{
@@ -25,10 +25,10 @@ public partial class LoadingPage : ContentPage
 		}
 		else
 		{
-            //User is not logged in
-            //Redirect to login page
+			//User is not logged in
+			//Redirect to login page
 
-            await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
-        }
-    }
+			await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
+		}
+	}
 }
