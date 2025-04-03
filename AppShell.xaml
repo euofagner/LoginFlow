@@ -31,11 +31,11 @@
             Title="Listing"
             ContentTemplate="{DataTemplate pages:ListingPage}"
             Route="ListingPage" />
-
-        <ShellContent
-            Title="Profile"
-            ContentTemplate="{DataTemplate pages:ProfilePage}"
-            Route="ProfilePage" />
     </TabBar>
+
+    <ShellContent
+        Title="Profile"
+        ContentTemplate="{DataTemplate pages:ProfilePage}"
+        Route="ProfilePage" />
 
 </Shell>
